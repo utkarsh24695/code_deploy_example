@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/html
+     destination: /var/www/html/wordpress
 permissions:
-   - object: /var/www/html
+   - object: /var/www/html/wordpress
      pattern: "**"
      owner: ubuntu
      group: ubuntu
@@ -13,8 +13,6 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-    - location: scripts/installapache.sh
-      runas: root
     - location: scripts/startapache.sh
       runas: root
    AfterInstall:
