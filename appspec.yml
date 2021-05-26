@@ -3,7 +3,7 @@ os: linux
 files:
    - source: /
      destination: /var/www/html/first/
-file_exists_behavior: RETAIN
+file_exists_behavior: DISALLOW
 permissions:
    - object: /var/www/html/first/
      pattern: "**"
