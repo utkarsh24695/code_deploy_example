@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo service apache2 start > /var/log/startapache.out 2>&1
+sudo service nginx start > /var/log/startapache.out 2>&1
