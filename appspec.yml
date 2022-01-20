@@ -6,10 +6,11 @@ files:
 permissions:
    - object: /var/www/html/
      owner: ubuntu
-     group: ubuntu
-     mode: 755
+     group: www-data
+     mode: 775
      type:
        - file
+       - directory
 hooks:
    BeforeInstall:
     - location: scripts/stopapache.sh
